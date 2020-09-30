@@ -1,0 +1,8 @@
+Options All -Indexes
+
+#Urls amigables
+
+RewriteEngine on
+
+RewriteRule ^(.*)/([a-zA-Z0-9_-]+)$ index.php?action=$1&page=$2
+RewriteRule ^(\w+)$ index.php?action=$1 [L]
